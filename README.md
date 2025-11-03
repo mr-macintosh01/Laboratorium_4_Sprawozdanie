@@ -6,8 +6,8 @@ Utworzono manifest YAML definiujący Poda loop, który wykonuje pętlę for i wy
 
 ### loop.yaml:
 
-<code>
-apiVersion: v1
+
+<code>apiVersion: v1
 kind: Pod
 metadata:
   name: loop
