@@ -35,7 +35,7 @@ Pod loop wykonał polecenie i zakończył działanie ze statusem Completed, poni
 
 <img width="477" height="144" alt="image" src="https://github.com/user-attachments/assets/31950bd9-c0ed-4895-a8b1-675c04f6b75f" />
 
-## Zadanie 3 — Modyfikacja manifestu, aby Pod był w stanie Running:
+## Zadanie 3 — Modyfikacja manifestu, aby Pod był w stanie Running
 
 Po dodaniu <code>sleep infinity</code> proces w kontenerze nie kończy się, dzięki czemu Pod pozostaje w stanie Running.
 
