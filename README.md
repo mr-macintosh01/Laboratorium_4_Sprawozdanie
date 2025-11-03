@@ -2,6 +2,8 @@
 
 ## Zadanie 1 — Utworzenie manifestu YAML dla Poda
 
+Utworzono manifest YAML definiujący Poda loop, który wykonuje pętlę for i wypisuje pięć komunikatów.
+
 ### loop.yaml:
 
 apiVersion: v1
