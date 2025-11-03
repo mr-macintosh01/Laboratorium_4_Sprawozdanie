@@ -6,6 +6,7 @@ Utworzono manifest YAML definiujący Poda loop, który wykonuje pętlę for i wy
 
 ### loop.yaml:
 
+<code>
 apiVersion: v1
 kind: Pod
 metadata:
@@ -16,26 +17,21 @@ spec:
       image: busybox:1.36.1
       command: ["sh", "-c", "for i in $(seq 1 5); do echo \"$i - A piece of cake !\"; done"]
   restartPolicy: Never
+</code>
 
 ## Zadanie 2 — Utworzenie Poda i sprawdzenie statusu
 
 Pod loop wykonał polecenie i zakończył działanie ze statusem Completed, ponieważ proces w kontenerze zakończył się po wypisaniu pięciu linii.
 
-### Uruchomienie Poda:
-
-<code>kubectl apply -f loop.yaml</code>
+### Uruchomienie Poda <code>kubectl apply -f loop.yaml</code>:
 
 <img width="416" height="60" alt="image" src="https://github.com/user-attachments/assets/61a522f1-09dc-43e8-a2f1-d7ebd18bf992" />
 
-### Sprawdzenie statusu:
-
-<code>kubectl get pods</code>
+### Sprawdzenie statusu <code>kubectl get pods</code>:
 
 <img width="497" height="76" alt="image" src="https://github.com/user-attachments/assets/e660acec-bc43-4812-9704-c346658b3167" />
 
-### Logi:
-
-<code>kubectl logs loop</code>
+### Logi <code>kubectl logs loop</code>:
 
 <img width="477" height="144" alt="image" src="https://github.com/user-attachments/assets/31950bd9-c0ed-4895-a8b1-675c04f6b75f" />
 
